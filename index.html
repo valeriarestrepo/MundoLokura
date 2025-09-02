@@ -1,836 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>CIAM - Bibliotec</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>MundoLokura</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
 
-  <link href="Login-Usable/pages-login.html" rel="stylesheet">
-  <link href="Login-Usable/pages-register.html" rel="stylesheet">
-  <link href="Login-Usable/users-profile.html" rel="stylesheet">
+    <link href="Login-Usable/pages-login.html" rel="stylesheet">
+    <link href="Login-Usable/pages-register.html" rel="stylesheet">
+    <link href="Login-Usable/users-profile.html" rel="stylesheet">
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
- 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
-  <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+
+    <link href="assets/css/main.css" rel="stylesheet">
 
 
 </head>
 
 <body>
 
-  <header id="header" class="header fixed-top">
+    <header id="header" class="header fixed-top">
 
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">CamiloTDH24@mail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+57 3218715127</span></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="branding">
-
-      <di class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          
-          <h1 class="">CIAM</h1>
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="Inicio">Inicio</a></li>
-            <li><a href="#about">Sobre CIAM</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li class="dropdown has-dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Sin definir</a></li>
-                <li class="dropdown has-dropdown"><a href="#"><span>Menu de usuario</span> <i class="bi bi-chevron-down"></i></a>
-                  <ul>
-                    <a href="/Day/Login-Usable/users-profile.html"><li>Perfil</li></a>
-                    <li><a href="#">Sin definir</a></li>
-                    <li><a href="#">Sin definir</a></li>
-                    <li><a href="#">Sin definir</a></li>
-                    <li><a href="#">Sin definir</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Sin defiinir</a></li>
-                <li><a href="#">Sin definir</a></li>
-                <li><a href="#">Sin definir</a></li>
-              </ul>
-            </li>
-            <li class="megamenu has-dropdown"><a href="#"><span>Categorias</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li>
-                  <a href="#">Humor & Comedia</a>
-                  <a href="#">Deportes & Ocio</a>
-                  <a href="#">Acción & ficción</a>
-                  <a href="#">Biografia & Autobiografia</a>
-                </li>
-                <li>
-                  <a href="#">Arte & Fotografia</a>
-                  <a href="#">Desarrollo Personal</a>
-                  <a href="#">Negocios & Finanzas</a>
-                  <a href="#">Salud & Bienestar</a>
-                </li>
-                <li>
-                  <a href="#">Educación & Formación</a>
-                  <a href="#">Historia & Politica</a>
-                  <a href="#">Religión & Espiritualidad</a>
-                  <a href="#">Cocina & Gastronomia</a>
-                </li>
-                <li>
-                  <a href="#">Ciencia & Tecnologia</a>
-                  <a href="#">No ficción</a>
-                  <a href="#">Ciencia Ficción</a>
-                  <a href="#">Misterio & Suspenso</a>
-                </li>
-                <li>
-                  <a href="#">Arte</a>
-                  <a href="#">Romance</a>
-                  <a href="#">Historia</a>
-                  <a href="#">Doramas</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-      </di>
-    </div>
-
-  </header>
-
-  <main class="main">
-
-   
-    <section id="hero" class="hero section">
-
-      <img src="assets/img/aboutt.jpg" alt="" data-aos="fade-in">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-start">
-          <div class="col-lg-8">
-            <h2 class="">Bienvenido a CIAM</h2>
-            <p>Explora sin límites, conecta con la sabiduría digital. Tu acceso a un universo de conocimiento, en nuestra biblioteca virtual.</p>
-            <a href="#about" class="btn-get-started">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <section id="about" class="about section">
-
-      <!-- # SOBRE CIAM-->
-
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">sobre Ciam<br></span>
-        <h2 class="">sobre Ciam<br></h2>
-        <p>Conéctate con el conocimiento digital. ¡Explora, aprende, crece!</p>
-      </div>
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Descubre, aprende, y expande tus horizontes desde cualquier lugar, en cualquier momento.</h3>
-            <p class="fst-italic">
-              En el corazón de CIAM, se encuentra nuestra pasión por el aprendizaje. Somos más que una biblioteca digital; somos un espacio de inspiración, donde la curiosidad se encuentra con la posibilidad. Únete a nosotros en este emocionante viaje hacia el descubrimiento.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>CIAM ofrece tarifas transparentes y accesibles para su amplia colección digital.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Obtén una gran cantidad de recursos de alta calidad a un costo reducido.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Disfruta de descuentos y servicios adicionales como parte de tu suscripción a CIAM.</span></li>
-            </ul>
-            <a href="#" class="read-more"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">MundoLokura24@mail.com</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>321872654</span></i>
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
         </div>
 
-      </div>
+        <div class="branding">
 
-    </section>
+            <di class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
 
-<!-- # MOTIVOS-->
-    <section id="cards" class="cards section">
+                    <h1 class="">MundoLokura</h1>
+                </a>
 
-      <div class="container">
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="#hero" class="Inicio">Inicio</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li class="megamenu has-dropdown"><a href="Productos.html"><span>Productos</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="#">Cumpleaños</a>
+                                    <a href="#">15 Años</a>
+                                    <a href="#">Baby Showers</a>
+                                    <a href="#">Primera Comunion</a>
+                                </li>
+                                <li>
+                                    <a href="#">Desechables</a>
+                                    <a href="#">Papeleria</a>
+                                    <a href="#">Jueguetes</a>
+                                    <a href="#">Piñateria</a>
+                                </li>
+                                <li>
+                                    <a href="#">Decoraciones</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
 
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="100">
-            <span>01</span>
-            <h4>Acceso Global</h4>
-            <p>Proveer acceso a información y recursos educativos a personas de todo el mundo, sin barreras geográficas o socioeconomicas.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="200">
-            <span>02</span>
-            <h4>Preservación Digital</h4>
-            <p>Conservar libros, documentos y materiales culturales en formato digital para futuras generaciones.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="300">
-            <span>03</span>
-            <h4> Apoyo a la Investigación y Educación</h4>
-            <p>Facilitar el acceso a recursos académicos y cientificos esenciales para estudiantes e investigadores.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
-            <span>04</span>
-            <h4>Alfabetización Digital</h4>
-            <p>Mejorar las habilidades digitales de los usuarios mediante la familiarización con la busqueda y manejo de la información en línea.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
-            <span>05</span>
-            <h4>Conservación del Patrimonio Cultural</h4>
-            <p>Preservar y difundir el patrimonio cultural y lingüostico de diferentes comunidades a través de la digitalización.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="600">
-            <span>06</span>
-            <h4>Soporte a la Educación a Distancia</h4>
-            <p>Facilitar la educación en línea ofreciendo recursos y materiales de apoyo que complemental los programas de formación a distancia.</p>
-          </div>
-
+            </di>
         </div>
 
-      </div>
+    </header>
 
-    </section>
+    <main class="main">
 
 
-    <section id="clients" class="clients section">
+        <section id="hero" class="hero section">
 
-      <div class="container">
+            <img src="assets/img/aboutt.jpg" alt="" data-aos="fade-in">
 
-        <div class="swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          
-        </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row justify-content-start">
+                    <div class="col-lg-8">
+                        <h2 class="">Bienvenidos a MundoLokura</h2>
+                        <p>Haz de tu celebración una experiencia mágica. En MundoLokura transformamos tus ideas en decoraciones llenas de color, creatividad y alegría para que cada momento sea inolvidable.</p>
+                    </div>
+                </div>
+            </div>
 
-      </div>
+        </section>
 
-    </section>
 
-   
-    <section id="services" class="services section">
+        <section id="about" class="about section">
 
-      <!-- # SERVICIOS-->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">Services</span>
-        <h2>Servicios</h2>
-        <p>Texto pendiente por agregar</p>
-      </div>
+            <!-- # SOBRE MUNDOLOKURA-->
 
-      <div class="container">
+            <div class="container section-title" data-aos="fade-up">
+                <span class="">Sobre MundoLokura<br></span>
+                <h2 class="">Sobre MundoLokura<br></h2>
+                <p>¡Ponle locura a tu fiesta! Decora, celebra y brilla con estilo</p>
+            </div>
 
-        <div class="row g
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Celebra como nunca, celebra con MundoLokura.</h3>
+                        <p class="fst-italic">
+                            Nuestro propósito es que cada celebración refleje tus emociones. Con diseños personalizados y detalles únicos, llevamos la decoración de fiestas a otro nivel. ¡Déjanos ser parte de tus momentos más especiales!
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> <span>Te ofrecemos diseños exclusivos de decoración para todo tipo de eventos.</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Descubre decoraciones temáticas únicas, hechas especialmente para tu evento.</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Accede a un catálogo creativo de moldes para tortas, papelería y recuerdos especiales.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+
+            <!-- # SERVICIOS-->
+            <div class="container section-title" data-aos="fade-up">
+                <span class="">Services</span>
+                <h2>Servicios</h2>
+                <p>Todo lo que necesitas para celebrar con estilo, color y alegría.</p>
+            </div>
+
+            <div class="container">
+
+                <div class="row g
         y-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Libros Electronicos</h3>
-              </a>
-              <p>Disfruta de nuestra vasta colección de libros electrónicos y revistas digitales. Puedes leer en línea o descargar tus títulos favoritos para disfrutar de ellos sin conexión. Tenemos desde literatura hasta textos académicos y revistas especializadas.</p>
-            </div>
-          </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item  position-relative">
+                            <div class="icon">
+                                <i class="bi bi-activity"></i>
+                            </div>
+                            <a href="#" class="stretched-link">
+                                <h3>Decoración de Fiestas</h3>
+                            </a>
+                            <p>Transformamos cualquier espacio en un escenario mágico. Te ofrecemos decoraciones personalizadas con colores, estilos y temáticas únicas para que tu celebración brille y se convierta en un recuerdo inolvidable.</p>
+                        </div>
+                    </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eventos y Webinarios en Línea</h3>
-              </a>
-              <p>Participa en nuestros eventos y webinarios en línea, donde podrás asistir a charlas, talleres y conferencias impartidas por expertos en diversos campos. Estos eventos te ofrecen la oportunidad de aprender y conectarte con otros usuarios interesados en los mismos temas.</p>
-            </div>
-          </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <i class="bi bi-broadcast"></i>
+                            </div>
+                            <a href="#" class="stretched-link">
+                                <h3>Bouquets y Arreglos Creativos</h3>
+                            </a>
+                            <p>Desde bouquets con globos hasta arreglos llenos de estilo, creamos diseños que sorprenden y llenan de alegría tus eventos. Perfectos para cumpleaños, aniversarios, baby showers y toda ocasión especial.</p>
+                        </div>
+                    </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Bases de Datos Académicas y Científicas</h3>
-              </a>
-              <p>Accede a una variedad de bases de datos que incluyen artículos de revistas, tesis y documentos de investigación. Encuentra información actualizada y relevante para tus estudios o proyectos de investigación.</p>
-            </div>
-          </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <i class="bi bi-easel"></i>
+                            </div>
+                            <a href="#" class="stretched-link">
+                                <h3>Accesorios para Fiestas</h3>
+                            </a>
+                            <p>Velas, manteles, bombas y mucho más. Todo lo que necesitas para darle vida, color y energía a tu celebración lo encuentras aquí, con diseños originales que marcan la diferencia.</p>
+                        </div>
+                    </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asistencia de Referencia en Línea</h3>
-              </a>
-              <p>¿Necesitas ayuda? Nuestros bibliotecarios están disponibles a través de chat en vivo, correo electrónico o videollamadas para ayudarte a encontrar la información que necesitas, orientarte sobre nuestros recursos y resolver cualquier duda que tengas</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <i class="bi bi-bounding-box-circles"></i>
+                            </div>
+                            <a href="#" class="stretched-link">
+                                <h3>Papelería Creativa</h3>
+                            </a>
+                            <p>Invitaciones, recordatorios, tarjetas y detalles únicos. Te ofrecemos papelería hecha a tu medida, diseñada con creatividad y mucho estilo para marcar la diferencia en cada celebración.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Recursos Educativos y Formación en Línea</h3>
-              </a>
-              <p>Participa en nuestros cursos en línea, tutoriales y talleres. Aprenderás a utilizar herramientas digitales, mejorarás tus habilidades de investigación y podrás desarrollar competencias profesionales clave.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <i class="bi bi-calendar4-week"></i>
+                            </div>
+                            <a href="#" class="stretched-link">
+                                <h3>Productos Personalizados</h3>
+                            </a>
+                            <p>Porque cada fiesta es única, diseñamos productos exclusivos que reflejan tu esencia: desde detalles decorativos hasta artículos especiales hechos solo para ti.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Acceso a Archivos y Colecciones Digitalizadas</h3>
-              </a>
-              <p>Explora nuestras colecciones especiales y archivos digitalizados que incluyen manuscritos históricos, fotografías, mapas y documentos audiovisuales. Estos recursos están disponibles en línea para que los consultes y estudies desde cualquier lugar.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-item position-relative">
+                            <div class="icon">
+                                <i class="bi bi-chat-square-text"></i>
+                            </div>
+                            <a href="#" class="stretched-link">
+                                <h3>Atención y Asesoría Personalizada</h3>
+                            </a>
+                            <p>No solo decoramos, te acompañamos en todo el proceso. Te asesoramos para que tu evento tenga la temática perfecta, cuidando cada detalle para que sea tal como lo imaginaste.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
 
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>CIAM</h3>
-              <p>Aquí puedes encontrar todos los libros y contenido que tenemos para ti y disfrutar de una lectura agradable según tus gustos.</p>
-              <a class="cta-btn" href="portfolio-details.html">Ir</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">Portfolio</span>
-        <h2>Portfolio</h2>
-        <p>Texto pendiente por agregar</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todo</li>
-            <li data-filter=".filter-app">Fantasia</li>
-            <li data-filter=".filter-product">Misterio</li>
-            <li data-filter=".filter-branding">Romance</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fantasia</h4>
-                <p>El arbol generoso <br>
-                Por: Shel Silverstein</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fantasia</h4>
-                <p>dddddddd</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fantasia</h4>
-                <p>Las mil noches</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fantasia</h4>
-                <p>Alicia en el país de las maravillas</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>El principito</h4>
-                <p>Autor: </p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fantasia</h4>
-                <p>Las mil y una noches</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- FIN PORTAFOLIO V -->
-
-    <!-- PRECIOS -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">Precios</span>
-        <h2>Precios</h2>
-        <p>CIAM también ofrece cuentas VIP/Premium para autores que desen expandir sus libros a nuevos lectores.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-4 g-lg-0">
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Plan Gratuito</h3>
-              <h4><sup>$</sup>0<span> / Mes</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Subir libros</span></li>
-                <li><i class="bi bi-check"></i> <span>Editar contenido</span></li>
-                <li><i class="bi bi-check"></i> <span>Valorar libros</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Valorar libros</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Corregir libros en linea</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Comprar</a></div>
-            </div>
-          </div><!-- FIN PLAN GRATUITO -->
-
-          <div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item">
-              <h3>Plan Mediano</h3>
-              <h4><sup>$</sup>29<span> / Mes</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Subir libros</span></li>
-                <li><i class="bi bi-check"></i> <span>Editar contenido</span></li>
-                <li><i class="bi bi-check"></i> <span>Valorar libros</span></li>
-                <li><i class="bi bi-check"></i> <span>Valorar libros</span></li>
-                <li><i class="bi bi-check"></i> <span>Corregir libros en linea</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Comprar</a></div>
-            </div>
-          </div><!-- FIN PLAN MEDIO -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Plan Pro</h3>
-              <h4><sup>$</sup>49<span> / Mes</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Editar y mover libros</span></li>
-                <li><i class="bi bi-check"></i> <span>Establecer publicidad</span></li>
-                <li><i class="bi bi-check"></i> <span>Remuneración por lector</span></li>
-                <li><i class="bi bi-check"></i> <span>Remuneración por descarga</span></li>
-                <li><i class="bi bi-check"></i> <span>Descuentos al subir libros</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Comprar</a></div>
-            </div>
-          </div><!-- FIN PLAN PRO -->
-
-        </div>
-
-      </div>
-
-    </section><!-- FIN PRECIOS -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">TEAM</span>
-        <h2>TEAM</h2>
-        <p>Este proyecto está siendo desarrollado unicamente por Camilo C. R</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Vacante Libre</h4>
-                <span>Base de datos</span>
-                <p>
-                  En busca de gestor en base de datos
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member3 -->
-
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Camilo C. R</h4>
-                <span>Desarrollador de software</span>
-                <p>
-                  Estudiante de ingenieria especializado en el análisis y desarrollo de software, gestor y tecnico en la resolución de problemas tecnologicos.
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Vacante libre</h4>
-                <span>Redes</span>
-                <p>
-                  En busca de Ing especializado en redes
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- fin teal -->
-
-        </div>
-
-      </div>
-
-    </section><!-- FIN TEAMM -->
-
-    <!-- CONTACTO -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">ContactO</span>
-        <h2 class="">ContactO</h2>
-        <p>POR EDITAR</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@example.com</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <div class="row gy-4 mt-1">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div><!-- Google Maps -->
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-about">
-            <a href="index.html" class="logo">Lianx</a>
-            <div class="footer-contact pt-3">
-              <p>Calle 8</p>
-              <p>Cali, 760046</p>
-              <p class="mt-3"><strong>Telefono:</strong> <span>+57 3218715127</span></p>
-              <p><strong>Email:</strong> <span>CamiloTDH24@gmail.com</span></p>
             </div>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>82
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+
+        </section>
+        <!-- /Services Section -->
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section">
+
+            <img src="assets/img/cta-bg.jpg" alt="">
+
+            <div class="container">
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h3>MundoLokura</h3>
+                            <p>Hacemos de tus momentos especiales recuerdos inolvidables con decoraciones y productos que sorprenden y enamoran.</p>
+                            <a class="cta-btn" href="portfolio-details.html">Ir</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+        </section>
+        <!-- /Call To Action Section -->
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span class="">Portfolio</span>
+                <h2>Portfolio</h2>
+                <p>Donde la magia y la creatividad se encuentran 🎈</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                        <li data-filter="*" class="filter-active">Todo</li>
+                        <li data-filter=".filter-app">Decoraciones</li>
+                        <li data-filter=".filter-product">Papeleria</li>
+                        <li data-filter=".filter-branding">Piñateria</li>
+                    </ul>
+                    <!-- End Portfolio Filters -->
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Decoraciones</h4>
+                                <p>Cantina la 15</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Papeleria</h4>
+                                <p>Cuadernos</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Piñateria</h4>
+                                <p>Bolsas de regalo</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Decoraciones</h4>
+                                <p>Primera Comunion</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Papeleria</h4>
+                                <p>Marcadores</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Piñateria</h4>
+                                <p>Velas</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Decoraciones</h4>
+                                <p>Minnie Mouse</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Papeleria</h4>
+                                <p>Lapiceros</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Piñateria</h4>
+                                <p>Cortinas</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+
+                    </div>
+                    <!-- End Portfolio Container -->
+                    <a href="https://photos.google.com/share/AF1QipNvzbhdXAwHOWVlGbuqvALl08-fs216qDZ3idvo2U-d4bpv0slr3azz13rYVedYRg"><button>Ver portafolio</button></a>
+                    <a href=""><button>Contactanos</button></a>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- FIN PORTAFOLIO V -->
+
+
+
+
+        <!-- CONTACTO -->
+        <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span class="">Contacto</span>
+                <h2 class="">Contacto</h2>
+                <p>¡Hablemos de tu fiesta! 💌 Escríbenos ahora o ven a visitarnos. MundoLokura es el lugar donde cada detalle se convierte en celebración.”</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Visitanos!</h3>
+                            <p>Cra 20 #13-04 Candelaria</p>
+                        </div>
+                    </div>
+                    <!-- End Info Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-telephone"></i>
+                            <h3>Llamanos!</h3>
+                            <p>3117181323</p>
+                        </div>
+                    </div>
+                    <!-- End Info Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Escribenos!</h3>
+                            <p>MundoLokura@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- End Info Item -->
+
+                </div>
+
+                <div class="row gy-4 mt-1">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                            frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- Google Maps -->
+
+                    <div class="col-lg-6">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Correo" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Objetivo" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Cargando</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">¡Listo! 🎊 Tu mensaje voló directo a nuestro equipo. ¡Gracias por escribirnos, pronto tendrás noticias nuestras!</div>
+
+                                    <button type="submit">Enviar!</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Contact Section -->
+
+    </main>
+
+    <footer id="footer" class="footer position-relative">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <a href="index.html" class="logo">MundoLokura</a>
+                        <div class="footer-contact pt-3">
+                            <p>Calle 20</p>
+                            <p>Candelaria, 760046</p>
+                            <p class="mt-3"><strong>Telefono:</strong> <span>3117181323</span></p>
+                            <p><strong>Correo:</strong> <span>MundoLokura@gmail.com</span></p>
+                        </div>
+                        <div class="social-links d-flex mt-4">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Enlaces útiles</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Terminos de servicios</a></li>
+                        <li><a href="#">Plítica de privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Nuestros servicios</h4>
+                    <ul>
+                        <li><a href="#">Decoración de Fiestas</a></li>
+                        <li><a href="#">Bouquets y Arreglos Creativos</a></li>
+                        <li><a href="#">Accesorios para Fiestas</a></li>
+                        <li><a href="#">Papelería Creativa</a></li>
+                        <li><a href="#">Productos Personalizados</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>🎂Tu Locura, Nuestra Pasión!</h4>
+                    <p>Visítanos en nuestro local o contáctanos. ¡La fiesta de tus sueños te espera en MundoLokura!</p>
+                </div>
+
+            </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Enlaces útiles</h4>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#about">Sobre nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Terminos de servicios</a></li>
-            <li><a href="#">Plítica de privacidad</a></li>
-          </ul>
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1">MundoLokura</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+                <!-- Recordatorio para mi; Crear perfil de Linkedin y agregar URL -->
+                Designed by <a href="">Valeria Restrepo</a>
+            </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nuestros servicios</h4>
-          <ul>
-            <li><a href="#">Diseño web</a></li>
-            <li><a href="#">Desarrollo web</a></li>
-            <li><a href="#">Gestión de software</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Diseño grafico</a></li>
-          </ul>
-        </div>
+    </footer>
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Nuestro boletín</h4>
-          <p>Suscribete para estar al día con nuestras mejoras y actualizaciones!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribirse"></div>
-            <div class="loading">Cargando</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-      </div>
-    </div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1">CIAM</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- Recordatorio para mi; Crear perfil de Linkedin y agregar URL -->
-        Designed by <a href="">Camilo C. R</a>
-      </div>
-    </div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 

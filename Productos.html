@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>MundoLokura</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <link rel="stylesheet" href="index.html">
+    <link href="Login-Usable/pages-login.html" rel="stylesheet">
+    <link href="Login-Usable/pages-register.html" rel="stylesheet">
+    <link href="Login-Usable/users-profile.html" rel="stylesheet">
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+
+
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header" class="header fixed-top">
+
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">MundoLokura24@mail.com</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>321872654</span></i>
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding">
+
+            <di class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+
+                    <h1 class="">MundoLokura</h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html" class="Inicio">Inicio</a></li>
+                        <li><a href="https://photos.google.com/share/AF1QipNvzbhdXAwHOWVlGbuqvALl08-fs216qDZ3idvo2U-d4bpv0slr3azz13rYVedYRg">Portfolio</a></li>
+                        <li class="megamenu has-dropdown"><a href="#"><span>Productos</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li>
+                                    <a href="#">Cumpleaños</a>
+                                    <a href="#">15 Años</a>
+                                    <a href="#">Baby Showers</a>
+                                    <a href="#">Primera Comunion</a>
+                                </li>
+                                <li>
+                                    <a href="#">Desechables</a>
+                                    <a href="#">Papeleria</a>
+                                    <a href="#">Jueguetes</a>
+                                    <a href="#">Piñateria</a>
+                                </li>
+                                <li>
+                                    <a href="#">Decoraciones</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+            </di>
+        </div>
+
+    </header>
+
+
+    <!-- COMPRAS DE PRODUCTOS -->
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+        <nav id="nav">
+            <ul class="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li>
+                    <a href="#">PRODUCTOS &#9662;</a>
+                    <ul>
+                        <li><a href="Productos.html">Tiendas Online</a></li>
+                    </ul>
+                </li>
+                <br>
+                <br>
+            </ul>
+        </nav>
+
+        <button class="btn-compra">COMPRA AHORA</button>
+        <br>
+    </header>
+
+    <!-- Carrito flotante -->
+    <div class="cart-floating">
+        🛒 <span id="contador-carrito">0</span>
+        <div id="total-carrito">$0</div>
+    </div>
+
+    <!-- Buscador Flotante -->
+    <div class="BuscadorFlotante">
+        <input type="text" id="buscador" placeholder="Buscar producto..." onkeyup="filtrarProductos()" />
+        <ul id="sugerencias" class="sugerencias"></ul>
+    </div>
+    <br>
+    <h1 class="titulo">Nuestros Productos</h1>
+
+    <!-- Contenedor de productos -->
+    <div class="contenedor-productos">
+
+        <div class="producto">
+            <img src="assets/img/Productos/papel2.jpg" alt="Papelillo">
+            <h3>Papelillo vintage</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('PAPELILLO', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/papel3.jpg" alt="Papelillo">
+            <h3>Papelillo adhesivo floral</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('PAPELILLO', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/papel4.jpg" alt="Papelillo">
+            <h3>Papelillo</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('PAPELILLO', 15000)">Añadir al carrito</button>
+        </div>
+
+
+
+        <div class="producto">
+            <img src="assets/img/Productos/papel5.jpg" alt="Foami">
+            <h3>Foami</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('FOAMI', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/papel6.jpg" alt="Foami">
+            <h3>Foami escarchado</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('FOAMI', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/papel7.jpg" alt="Foami">
+            <h3>Foami moldeable</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('FOAMI', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/vasos1.jpg" alt="Vasos">
+            <h3>Vasos</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('VASOS', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/vasos2.jpg" alt="Vasos">
+            <h3>Vasos Decorados</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('VASOS', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/vasos3.jpg" alt="Vasos">
+            <h3>Vasos estampados</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('VASOS', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/globoliso.jpg" alt="Globo">
+            <h3>Globos Lisos</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('GLOBO', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/globoestampado.jpg" alt="Globo">
+            <h3>Globos Estampados</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('GLOBO', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/globofiguras.jpg" alt="Globo">
+            <h3>Globos de corazón</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('GLOBO', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/globotubo.jpg" alt="Globo">
+            <h3>Globos tubito</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('GLOBO', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/globonum.jpg" alt="Globo">
+            <h3>Globos numeros</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('GLOBO', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/globoletra.jpg" alt="Globo">
+            <h3>Globos letra</h3>
+            <p>$15,000</p>
+            <button onclick="agregarAlCarrito('GLOBO', 15000)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/platos.jpg" alt="Platos">
+            <h3>Platos</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('PLATOS', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/platos2.jpg" alt="Platos">
+            <h3>Platos decorados</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('PLATOS', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/cubiertos.jpg" alt="Cubiertos">
+            <h3>Cubiertos</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('CUBIERTOS', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/muneNina.jpg" alt="Juguetes">
+            <h3>Muñecas</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('JUGUETES', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/balones.jpg" alt="Juguetes">
+            <h3>Balones</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('JUGUETES', 18500)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="assets/img/Productos/munebebes.jpg" alt="Juguetes">
+            <h3>Muñecos</h3>
+            <p>$18,500</p>
+            <button onclick="agregarAlCarrito('JUGUETES', 18500)">Añadir al carrito</button>
+        </div>
+
+
+
+    </div>
+
+    <!-- Scripts del carrito -->
+    <script>
+        let carrito = [];
+        let total = 0;
+
+        function agregarAlCarrito(nombre, precio) {
+            carrito.push({
+                nombre,
+                precio
+            });
+            total += precio;
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            document.getElementById("contador-carrito").textContent = carrito.length;
+            document.getElementById("total-carrito").textContent = "$" + total.toLocaleString('es-CO');
+        }
+
+        function filtrarProductos() {
+            const input = document.getElementById("buscador");
+            const filtro = input.value.toLowerCase();
+            const productos = document.getElementsByClassName("producto");
+            const sugerencias = document.getElementById("sugerencias");
+
+            sugerencias.innerHTML = "";
+
+            for (let i = 0; i < productos.length; i++) {
+                const nombreProducto = productos[i].querySelector("h3").textContent.toLowerCase();
+
+                if (nombreProducto.includes(filtro)) {
+                    productos[i].style.display = "";
+                    const li = document.createElement("li");
+                    li.textContent = productos[i].querySelector("h3").textContent;
+                    li.onclick = () => {
+                        input.value = productos[i].querySelector("h3").textContent;
+                        sugerencias.innerHTML = "";
+                        for (let j = 0; j < productos.length; j++) {
+                            if (productos[j].querySelector("h3").textContent.toLowerCase().includes(input.value.toLowerCase())) {
+                                productos[j].style.display = "";
+                            } else {
+                                productos[j].style.display = "none";
+                            }
+                        }
+                    };
+                    sugerencias.appendChild(li);
+                } else {
+                    productos[i].style.display = "none";
+                }
+            }
+
+            if (filtro === "") sugerencias.innerHTML = "";
+        }
+    </script>
+
+
+</body>
+
+</html>
